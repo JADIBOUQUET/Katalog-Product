@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-burgundy: #491318;
+    --color-ivory: #ece3d8;
+    --color-espresso: #24120e;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #491318;
+    color: #ece3d8;
+  }
+
+  body {
+    overflow-x: hidden;
+    background-color: #491318;
+    color: #ece3d8;
+  }
+}
+
+.font-script {
+  font-family: 'Pinyon Script', 'Great Vibes', cursive;
+}
+
+.font-script-alt {
+  font-family: 'Great Vibes', 'Pinyon Script', cursive;
+}
+
+.font-editorial {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-sans-clean {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Dark Rose Hero Texture Overlay inspired by reference */
+.hero-rose-bg {
+  background-color: #24120e;
+  background-image: 
+    radial-gradient(circle at 50% 35%, rgba(73, 19, 24, 0.55) 0%, rgba(36, 18, 14, 0.92) 72%, #24120e 100%),
+    url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1800&q=80');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Satin Ribbon Effect for Our Story section */
+.satin-ribbon-band {
+  background: linear-gradient(
+    180deg,
+    #24120e 0%,
+    #5d171e 18%,
+    #7a2029 48%,
+    #491318 75%,
+    #24120e 100%
+  );
+  box-shadow: 
+    0 12px 30px rgba(15, 5, 4, 0.7),
+    inset 0 2px 3px rgba(236, 227, 216, 0.25),
+    inset 0 -2px 4px rgba(36, 18, 14, 0.8);
+}
+
+/* Stitch edge detail on ribbon like reference */
+.ribbon-stitch {
+  background-image: repeating-linear-gradient(
+    90deg,
+    rgba(236, 227, 216, 0.35) 0px,
+    rgba(236, 227, 216, 0.35) 3px,
+    transparent 3px,
+    transparent 7px
+  );
+  height: 2px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #24120e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #491318;
+  border: 1px solid rgba(236, 227, 216, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6b1d24;
+}
+
